@@ -1,1 +1,26 @@
+.card-body p {
+    margin-bottom: 0;
+}
 
+.card-body {
+    text-align: center;
+}
+
+.card {
+    width: 250px;
+    border: none;
+}
+
+body {
+    background-color: #F5F5F1;
+}
+
+.paragraph {
+    font-size: 12px;
+    color: #716D66;
+}
+
+.card-body .ruolo {
+    font-size: 11px;
+    color: #716D66;
+}

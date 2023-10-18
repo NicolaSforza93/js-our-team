@@ -34,27 +34,29 @@ const teamMembers = [
     },
 ]
 
-console.log(teamMembers);
+// console.log(teamMembers);
 // - recupero l'elemento dal DOM
 const membersDomElement = document.getElementById('team-members');
-console.log(membersDomElement);
+// console.log(membersDomElement);
 // - vado a ciclare l'array per attraversarlo
 for (let i = 0; i < teamMembers.length; i++) {
     const currentMembers = teamMembers[i];
 // - stampo per ogni membro le informazioni
-    // console.log(currentMembers);
     console.log(currentMembers.nome);
     console.log(currentMembers.ruolo);
     console.log(currentMembers.foto);
 
 // - vado a stampare le informazioni nel DOM
-  const htmlCard = `<div class="card">
-  <img src="./img/${currentMembers.foto}">
-  <div class="card-body">
-    <p>${currentMembers.nome}</p>
-    <p>${currentMembers.ruolo}</p>
-  </div>`
-  console.log(htmlCard);
+  const htmlCard = `
+    <div class="card">
+        <img src="./img/${currentMembers.foto}">
+        <div class="card-body">
+            <p class="nome">${currentMembers.nome}</p>
+            <p class="ruolo">${currentMembers.ruolo}</p>
+        </div>
+    </div>`
+
+//   console.log(htmlCard);
   membersDomElement.innerHTML += htmlCard
 }
 
