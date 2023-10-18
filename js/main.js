@@ -35,11 +35,18 @@ const teamMembers = [
 ]
 
 console.log(teamMembers);
-
+// - recupero l'elemento dal DOM
+const membersDomElement = document.getElementById('team-members');
+console.log(membersDomElement);
 // - vado a ciclare l'array per attraversarlo
 for (let i = 0; i < teamMembers.length; i++) {
     const currentMembers = teamMembers[i];
 // - stampo per ogni membro le informazioni
     console.log(currentMembers);
+// - salvo i dati completi di ogni singolo membro in una variabile
+  const allData = `${currentMembers.nome} ${currentMembers.ruolo} ${currentMembers.foto}`;
+  console.log(allData);
+// - vado a stampare le informazioni nel DOM
+  membersDomElement.innerHTML += allData
 }
 
