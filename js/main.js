@@ -35,3 +35,11 @@ const teamMembers = [
 ]
 
 console.log(teamMembers);
+
+// - vado a ciclare l'array per attraversarlo
+for (let i = 0; i < teamMembers.length; i++) {
+    const currentMembers = teamMembers[i];
+// - stampo per ogni membro le informazioni
+    console.log(currentMembers);
+}
+
