@@ -42,11 +42,23 @@ console.log(membersDomElement);
 for (let i = 0; i < teamMembers.length; i++) {
     const currentMembers = teamMembers[i];
 // - stampo per ogni membro le informazioni
-    console.log(currentMembers);
-// - salvo i dati completi di ogni singolo membro in una variabile
-  const allData = `${currentMembers.nome} ${currentMembers.ruolo} ${currentMembers.foto}`;
-  console.log(allData);
+    // console.log(currentMembers);
+    console.log(currentMembers.nome);
+    console.log(currentMembers.ruolo);
+    console.log(currentMembers.foto);
+
 // - vado a stampare le informazioni nel DOM
-  membersDomElement.innerHTML += allData
+  const htmlCard = `<div class="card">
+  <img src="./img/${currentMembers.foto}">
+  <div class="card-body">
+    <p>${currentMembers.nome}</p>
+    <p>${currentMembers.ruolo}</p>
+  </div>`
+  console.log(htmlCard);
+  membersDomElement.innerHTML += htmlCard
 }
+
+
+
+
 
