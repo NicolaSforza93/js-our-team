@@ -7,7 +7,6 @@
 }
 
 .card {
-    width: 250px;
     border: none;
 }
 
@@ -23,4 +22,11 @@ body {
 .card-body .ruolo {
     font-size: 11px;
     color: #716D66;
+}
+
+#team-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+
 }
